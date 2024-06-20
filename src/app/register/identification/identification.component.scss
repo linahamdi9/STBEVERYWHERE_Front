@@ -1,0 +1,173 @@
+/* Style global pour le conteneur du formulaire */
+.container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #c2c4c7;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(14, 14, 14, 0.1);
+}
+
+/* Nouveau style pour le cadre bleu du titre */
+.title-box {
+    background-color: #0a4496;
+    border: 1px solid #282f85; /* Changement de la couleur du cadre en bleu foncé */
+    border-radius: 50px;
+    padding: 12px;
+    margin-bottom: 20px;
+    height: 50px; /* Hauteur fixe pour le cadre */
+    display: flex; /* Utilisation de Flexbox pour centrer verticalement */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+}
+
+/* Nouveau style pour le texte du titre dans le cadre bleu */
+.title-text {
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* Style pour les groupes de champs de formulaire */
+.form-group {
+    margin-bottom: 25px;
+}
+
+/* Style pour les étiquettes */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Style pour les champs de saisie */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 200px; /* Largeur fixe */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(164, 138, 112, 0.7);
+}
+
+/* Style pour les champs de saisie avec icônes */
+.input-icon {
+    position: relative;
+}
+
+.input-icon input {
+    padding-left: 30px; /* Espacement pour l'icône */
+}
+
+.input-icon i {
+    position: absolute;
+    top: 70%; /* Ajustement de la position verticale de l'icône */
+    left: 10px;
+    transform: translateY(-50%);
+    color: #888;
+}
+.button-box {
+    text-align: center; /* Centrer le bouton horizontalement */
+    margin-top: 20px;
+}
+
+/* Style spécifique pour les boutons */
+.button-text {
+    background-color: #0a4496;
+    color: white;
+    padding: 12px 170px; /* Ajustement de la largeur du bouton */
+    width: 550px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 50px;
+    font-size: medium;
+    white-space: nowrap; 
+}
+
+.button-text:hover {
+    background-color: #123070;
+}
+
+/* Style spécifique pour les boutons radio */
+.radio-group label {
+    display: inline-block;
+    margin-right: 190px;
+    font-size: medium;
+    font-weight: normal;
+}
+
+/* Style spécifique pour les groupes de nom et prénom */
+.name-group {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.name-group div {
+    width: 210px;
+}
+
+
+
+/* Style spécifique pour le numéro de téléphone et l'adresse e-mail */
+.tel-email-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tel-email-group input[type="tel"],
+.tel-email-group input[type="email"] {
+    width: 210px; /* Largeur fixe */
+}
+
+/* Style spécifique pour le pays de naissance et la date de naissance */
+.birth-info-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.birth-info-group select,
+.birth-info-group input[type="date"] {
+    width: 210px; /* Largeur fixe */
+}
+
+/* Style spécifique pour les options de sélection */
+select option {
+    padding: 5px 10px;
+}
+
+/* Style pour le cadre bleu du bouton "CONTINUER" */
+.button-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+    .flag-container {
+        width: 20px;
+        height: 15px;
+    }
+}
+
+/* Style spécifique pour les cases à cocher */
+input[type="checkbox"] {
+    /* Autres styles */
+    transform: scale(1.5); /* Augmente la taille du cercle */
+}
+
+.mat-snack-bar-handset {
+    margin-top: 75px !important; 
+}
+
+
+
+
+

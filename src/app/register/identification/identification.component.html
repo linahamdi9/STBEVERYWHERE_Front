@@ -1,0 +1,74 @@
+<div class="container">
+  <!-- Cadre bleu pour le titre -->
+  <div class="title-box">
+    <h2 class="title-text">Identification</h2>
+  </div>
+  
+  <form >
+    <div class="form-group">
+      <label for="civilite">Civilité</label>
+      <div class="radio-group">
+        <label for="civilite_mme">
+          <input type="radio" id="civilit_mme" name="civilit" value="Mme" [(ngModel)]="data.civilit"> Madame
+        </label>
+        <label for="civilite_m">
+          <input type="radio" id="civilit_m" name="civilit" value="M" [(ngModel)]="data.civilit"> Monsieur
+        </label>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="name-group">
+        <div class="input-icon">
+          <label for="first_name">Nom</label>
+          <input type="text" id="first_name" name="first_name" required [(ngModel)]="data.first_name" />
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="input-icon">
+          <label for="last_name">Prénom</label>
+          <input type="text" id="last_name" name="last_name" required [(ngModel)]="data.last_name" />
+          <i class="fas fa-user"></i>
+        </div>
+      </div>
+    </div>
+    <div class="form-group tel-email-group">
+      <div class="input-icon">
+        <label for="phone">Numéro de téléphone mobile</label>
+        <input type="tel" id="phone" name="phone" required [(ngModel)]="data.phone" placeholder="+216">
+        <i class="fas fa-phone"></i>
+      </div>
+      <div class="input-icon">
+        <label for="email">Adresse e-mail</label>
+        <input type="email" id="email" name="email" required [(ngModel)]="data.email" placeholder="Email">
+        <i class="fas fa-envelope"></i>
+      </div>
+    </div>
+    <div class="form-group birth-info-group">
+      <div>
+        <label for="paye">Pays de naissance</label>
+        <select id="paye" name="paye" [(ngModel)]="data.paye">
+          <option value="" hidden selected>Choisir</option>
+          <option value="TUNISIE">TUNISIE</option>
+          <option value="FRANCE">FRANCE</option>
+          <option value="ITALIE">ITALIE</option>
+          <option value="ALGERIE">ALGERIE</option>
+          <option value="CANADA">CANADA</option>
+          <option value="LIBYE">LIBYE</option>
+        </select>
+      </div>
+      <div>
+        <label for="date_naissance">Date de naissance</label>
+        <input type="date" id="date_naissance" name="date_naissance" required [(ngModel)]="data.date_naissance" />
+      </div>
+    </div>
+    <div class="button-box">
+      <button type="submit" class="button-text" (click)="onSubmit()"> CONTINUER</button>
+    </div>
+    
+
+
+
+
+
+    
+  </form>
+</div>

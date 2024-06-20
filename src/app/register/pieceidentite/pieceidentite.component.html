@@ -1,0 +1,90 @@
+<div class="container">
+    <!-- Cadre bleu pour le titre -->
+    <div class="title-box">
+      <h2 class="title-text">Piece d'identité</h2>
+    </div>
+<div class="form-group">
+    <div class="name-group">
+      <div>
+        <label for="nom">Nom</label>
+        <input type="text" id="first_name" name="first_name" required />
+      </div>
+      <div>
+        <label for="last_name">Prénom</label>
+        <input type="text" id="last_name" name="last_name" required />
+      </div>
+    </div>
+  </div>
+  <div class="form-group tel-email-group">
+    <div>
+        <label for="date_naissance">Date de naissance</label>
+        <input type="date" id="date_naissance" name="date_naissance" required />
+      </div>
+    <div>
+        <label for="pays_naissance">Pays de naissance</label>
+        <select id="pays_naissance" name="pays_naissance">
+          <option value="" hidden selected>Choisir</option>
+          <option value="">TUNISIE</option>
+          <option value="">FRANCE</option>
+          <option value="">ITALIE</option>
+          <option value="">ALGERIE</option>
+          <option value="">CANADA</option>
+          <option value="">LIBYE</option>
+        </select>
+    </div>
+   
+  </div>
+  <div class="form-group birth-info-group">
+    <div>
+        <label for="nom">Nom et prénom de la mère</label>
+        <input type="text" id="name-mother" name="name-mother" required />
+    </div>
+    <div>
+        <label for="date_naissance">Date de Délivrance </label>
+        <input type="date" id="date_naissance" name="date_naissance" required />
+      </div>
+  </div>
+  <div class="form-group birth-info-group ">
+    <div>
+        <label for="Adresse">Adresse</label>
+        <input type="text" id="Adresse" name="Adresse" required />
+    </div>
+    <div>
+        <label for="Emploi">Emploi </label>
+        <input type="text" id="emploi" name="emploi" required />
+      </div>
+  </div>
+
+
+
+        <div class="hero">
+            <div class="card">
+               
+                <img src="../assets/images/bg/Profile.png" id="Profile-Pic">
+                <label for="input-file" class="custom-file-upload">Update image</label>
+                <input type="file" accept="image/jpeg,image/png,image/jpg" id="input-file">
+            </div>
+        </div>
+        <script>
+            let ProfilePic = document.getElementById("Profile-Pic");
+            let inputFile = document.getElementById("input-file");
+
+            inputFile.onchange = function() {
+                let file = inputFile.files[0];
+                let reader = new FileReader();
+                reader.onloadend = function() {
+                    ProfilePic.src = reader.result;
+                }
+                if (file) {
+                    reader.readAsDataURL(file);
+                }
+            }
+        </script>
+
+
+        <div class="button-box">
+            <button type="submit" class="button-text" (click)="goto()">ENREGISTRER ET CONTINUER</button>
+          </div>
+
+
+         

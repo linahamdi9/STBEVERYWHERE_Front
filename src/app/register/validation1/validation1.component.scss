@@ -1,0 +1,69 @@
+.container {
+    width: 600px;
+    margin: 10 auto;
+    padding: 30px;
+    border: 1px solid #c2c4c7;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(14, 14, 14, 0.1);
+}
+
+/* Nouveau style pour le cadre bleu du titre */
+.title-box {
+    background-color: #0a4496;
+    border: 1px solid #282f85; /* Changement de la couleur du cadre en bleu foncé */
+    border-radius: 50px;
+    padding: 12px;
+    margin-bottom: 20px;
+    height: 50px; /* Hauteur fixe pour le cadre */
+    display: flex; /* Utilisation de Flexbox pour centrer verticalement */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+}
+.title-text {
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    font-size: large;
+}
+
+.button-box {
+    text-align: center; /* Centrer le bouton horizontalement */
+    margin-top: 20px;
+}
+
+/* Style spécifique pour les boutons */
+.button-text {
+    background-color: #0a4496;
+    color: white;
+    padding: 12px 170px; /* Ajustement de la largeur du bouton */
+    width: 550px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 50px;
+    font-size: medium;
+    white-space: nowrap; 
+}
+.button-text:hover {
+    background-color: #123070;
+}
+.button-box {
+    text-align: center;
+    margin-top: 30px;
+}
+@media (max-width: 480px) {
+    .flag-container {
+        width: 20px;
+        height: 15px;
+    }
+}
+.code-securite{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+  }
+  

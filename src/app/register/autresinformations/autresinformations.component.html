@@ -1,0 +1,87 @@
+<div class="container">
+    <!-- Cadre bleu pour le titre -->
+    <div class="title-box">
+        <h2 class="title-text">Autres informations</h2>
+    </div>
+    
+    <form action="#">
+        <h3>Personne politiquement exposée</h3>
+        <div class="form-group">
+            <label for="ppe"><h5>Êtes-vous un ppe?</h5></label>
+            <div class="radio-group">
+                <label for="oui">
+                    <input type="radio" id="oui" name="ppe" value="oui"> Oui 
+                </label>
+                <label for="non"> 
+                    <input type="radio" id="non" name="ppe" value="non"> Non
+                </label>
+            </div>
+        </div>
+     
+       
+        
+        <hr>
+        
+            <div class="name-group">
+                <section class="section">
+                    <h3>Indices d'américanité / Loi FATCA</h3>
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <label for="procuration-usa"><h6> Procuration Donnée à une personne située aux USA ?</h6> </label>
+                            <select id="procuration-usa" name="procuration-usa">
+                                <option value="CHOIX" disabled selected="">Choisir</option>
+                                <option value="non">Non</option>
+                                <option value="oui">Oui</option>
+                            </select>
+                        </div>
+                        <div class="grid-item">
+                            <label for="virement-usa"><h6>Permanent vers un compte aux États-Unis ?</h6></label>
+                            <select id="virement-usa" name="virement-usa">
+                                <option value="CHOIX" disabled selected="">Choisir</option>
+                                <option value="non">Non</option>
+                                <option value="oui">Oui</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        
+        
+        
+        <div class="form-group tel">
+            <label for="tel-us"><h5>Tel US:</h5></label>
+            <input type="tel" id="tel-us" name="tel-us" placeholder="201-555-0123" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </div>
+        
+        <div class="form-card ">
+            <label for="text"><h5>Green card :</h5></label>
+            <input type="text" id="text" name="text" required placeholder="xxxxxxxxxxx">
+        </div>
+    
+        <div  class="form-adresse ">
+            <label for="Adresse"><h5>Adresse UC :</h5></label>
+            <input type="text" id="Adresse" name="adresse" required placeholder="Votre adresse UC">
+        </div>
+        
+        <!-- Cadre bleu pour le bouton "CONTINUER" -->
+        <hr>
+        <div class="form-group">
+            <div class="radio-group">
+                <label for="particulier">
+                    <input type="radio" id="particulier" name="particulier" value="particulier"> Oui, je confirme que je suis assujetti à la loi FATCA ?
+                </label>
+            </div>
+            <div class="radio-group">
+                <label for="professionnel"> 
+                    <input type="radio" id="professionnel" name="professionnel" value="professionnel"> Non, je ne suis pas assujetti à la loi FATCA ?
+                </label>
+            </div>
+        </div>
+        
+        <div class="button-box">
+            <button type="submit" class="button-text" (click)="goto()">ENREGISTRER ET CONTINUER</button>
+          </div>     
+    </form>
+</div>
+
+

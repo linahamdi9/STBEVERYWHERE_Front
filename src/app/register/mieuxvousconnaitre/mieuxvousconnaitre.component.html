@@ -1,0 +1,75 @@
+<div class="container">
+    <!-- Cadre bleu pour le titre -->
+    <div class="title-box">
+        <h2 class="title-text">Mieux vous connaître</h2>
+    </div>
+
+    <form action="#">
+        <div class="motif">
+            <label for="motif"><h4>Motif :</h4></label>
+            <select id="motif" name="motif">
+                <option value="" hidden selected>Ouverture de compte</option>
+                <option value="compte_courant">Compte Courant</option>
+                <option value="compte_epargne">Compte Epargne</option>
+            </select>
+        </div>  
+        
+        <div class="nationalite">
+            <label for="nationalite"><h4>Êtes-vous Tunisien:</h4></label>
+            <div class="options">
+                <label for="resident_tunisie">
+                    <input type="radio" id="resident_tunisie" name="nationalite" value="resident_tunisie">
+                    Résident en Tunisie
+                </label>
+                <label for="non_resident_tunisie">
+                    <input type="radio" id="non_resident_tunisie" name="nationalite" value="non_resident_tunisie">
+                    Non résident en Tunisie
+                </label>
+            </div>
+        </div>
+
+        <div class="adresse">
+            <label for="pays"><h4>Veuillez choisir votre adresse:</h4></label>
+            <h5>Pays</h5>
+            <select id="pays" name="pays">
+                <option value="" hidden selected>Choisir</option>
+                <option value="tunis">Tunisie</option>
+                <option value="beja">France</option>
+            </select>
+        </div>
+        
+        <div class="country">
+            <h5>Gouvernorat</h5>
+            <select id="country" name="country">
+                <option value="" hidden selected>Saisir </option>
+                <option value="tunis">Mourneg</option>
+                <option value="beja">Béja</option>
+               
+            </select>
+        </div>
+        <div class="ville">
+            <h5>Ville</h5>
+            <select id="ville" name="ville">
+                <option value="" hidden selected>Choisir</option>
+                <option value="tunis">Mourneg</option>
+                <option value="beja">Béja</option>
+            </select>
+        </div>
+        <div class="code">
+            <h5>Code postal</h5>
+        <select id="code" name="code">
+                <option value="" hidden selected>Choisir</option>
+                <option value="tunis">9000</option>
+                <option value="beja">2090</option>
+            </select>
+        </div>
+           
+        
+
+        <!-- Utilisation de la même classe pour le bouton -->
+        <div class="button-box">
+            <button type="submit" class="button-text" (click)="goto()">CONTINUER</button>
+          </div>
+        
+    
+

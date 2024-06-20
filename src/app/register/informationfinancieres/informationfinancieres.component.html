@@ -1,0 +1,68 @@
+<div class="container">
+    <!-- Cadre bleu pour le titre -->
+    <div class="title-box">
+        <h2 class="title-text">Informations financières</h2>
+    </div>
+    
+    <form action="#">
+        <div class="form-group">
+            <label for="civilite">Vous êtes :</label>
+            <div class="radio-group">
+                <label for="particulier">
+                    <input type="radio" id="particulier" name="civilite" value="particulier"> Particulier
+                </label>
+
+                <label for="professionnel"> 
+                    <input type="radio" id="professionnel" name="civilite" value="professionnel"> Professionnel
+                </label>
+            </div>
+        </div>
+
+        <!-- Groupement des selects sur une seule ligne -->
+        <div class="form-group inline-group">
+            <div>
+                <label for="statutProfessionnel">Statut professionnel</label>
+                <select id="statutProfessionnel" name="statutProfessionnel">
+                    <option value="" hidden selected>choisir</option>
+                    <option value="" >Actif en CDI</option>
+                    <option value="" >-------</option>
+                    <option value="" >CHOIX 3</option>
+                </select>
+            </div>
+            <div>
+                <label for="Naturedelactivité">Nature de l'activité</label>
+                <select id="Naturedelactivité" name="Naturedelactivité">
+                    <option value="" hidden selected>choisir</option>
+                    <option value="" >Public</option>
+                    <option value="" >Privé </option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group profession">
+            <label for="Profession">Profession</label>
+            <select id="Profession" name="Profession">
+                <option value="" hidden selected>choisir</option>
+                <option value="" >Étudiant</option>
+                <option value="" >Cadres Salaries</option>
+                <option value="" >Non Salaries</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="AutreRevenu">Autre source de Revenu</label>
+            <div class="radio-group">
+                <label for="oui">
+                    <input type="radio" id="AutreRevenuOui" name="AutreRevenu" value="oui"> OUI
+                </label>
+                <label for="non"> 
+                    <input type="radio" id="AutreRevenuNon" name="AutreRevenu" value="non"> NON
+                </label>
+            </div>
+        </div>
+
+        <div class="button-box">
+            <button type="submit" class="button-text" (click)="goto()"> ENREGISTRER ET CONTINUER</button>
+        </div>
+    </form>
+</div>

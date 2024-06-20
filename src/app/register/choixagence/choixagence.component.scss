@@ -1,0 +1,119 @@
+/* Style du conteneur principal */
+.container {
+    width: 600px; /* Adjust this value to your desired width */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #c2c4c7;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(14, 14, 14, 0.1);
+  }
+  
+
+/* Style du cadre bleu du titre */
+.title-box {
+    background-color: #0a4496;
+    border: 1px solid #282f85; /* Changement de la couleur du cadre en bleu foncé */
+    border-radius: 50px;
+    padding: 12px;
+    margin-bottom: 20px;
+    height: 50px; /* Hauteur fixe pour le cadre */
+    display: flex; /* Utilisation de Flexbox pour centrer verticalement */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+}
+
+/* Style du texte du titre dans le cadre bleu */
+.title-text {
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* Style des champs de sélection */
+select {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Style pour le champ type_compte */
+.champ {
+    margin-bottom: 70px; /* Marge inférieure pour tous les champs */
+}
+
+/* Style pour regrouper Agence et Gouvernorat (inchangé) */
+.champ-double {
+    display: flex; /* Activer Flexbox pour la mise en page horizontale */
+    justify-content: space-between; /* Distribuer l'espace entre les champs */
+    margin-bottom: 500px; /* Ajouter une marge inférieure */
+}
+
+/* Style pour chaque champ dans champ-double (inchangé) */
+.champ-double .champ {
+    flex-basis: 45%; /* Définir la largeur relative de chaque champ */
+}
+.button-box {
+    text-align: center;
+    margin-top: 30px;
+}
+.button-text {
+    background-color: #0a4496;
+    color: white;
+    padding: 12px 170px; /* Ajustement de la largeur du bouton */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 50px;
+    font-size: medium;
+    white-space: nowrap; 
+}
+
+
+
+.button-text:hover {
+    background-color: #123070;
+}
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.champ-double {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Marge inférieure existante */
+    border-bottom: 1px solid #ccc; /* Ligne continue grise */
+  }
+  .title-box {
+    /* Styles existants */
+    margin-bottom: 40px; /* Augmenter la marge inférieure à 40px */
+  }
+
+  .iframe {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+  }
+  .container-map {
+    margin-top: 3px; /* Reduced margin from 40px to 30px */
+    display: flex;
+    justify-content: center;
+  }
+  .champ-type{
+  width: 70%; /* Adjust this value to your desired width */
+  padding: 1px;
+  border: 1px solid #e7e7e7
+}
+  
+ 
+
+ 
+  
+  
+
+
+
+  

@@ -1,0 +1,127 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #e3e5e7;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(14, 14, 14, 0.1);
+}
+
+/* Style pour le cadre bleu du bouton "CONTINUER" */
+.button-box {
+    text-align: center; /* Centrer le bouton horizontalement */
+    margin-top: 20px;
+}
+
+/* Style spécifique pour les boutons */
+.button-text {
+    background-color: #0a4496;
+    color: white;
+    padding: 12px 170px; /* Ajustement de la largeur du bouton */
+    width: 550px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 50px;
+    font-size: medium;
+    white-space: nowrap; 
+}
+
+
+.button-text:hover {
+    background-color: #123070;
+    box-shadow: 0 6px 8px rgba(0, 128, 0, 0.5); /* Changement de l'ombre au survol */
+}
+
+/* Style pour le cadre bleu du titre */
+.title-box {
+    background-color: #0a4496;
+    border: 1px solid #282f85;
+    border-radius: 50px;
+    padding: 12px;
+    margin-bottom: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centrer le texte horizontalement */
+}
+
+.title-text {
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* Le reste de votre CSS reste inchangé */
+h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+select {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="radio"] {
+    vertical-align: middle;
+}
+
+label[for="resident_tunisie"],
+label[for="non_resident_tunisie"] {
+    cursor: pointer;
+}
+.motif {
+    margin-bottom: 20px; /* Espacement entre les sections */
+}
+
+/* Style spécifique pour les options du select */
+/* Style spécifique pour les options du select */
+.motif select option[value="ouverture_compte"] {
+    color: #666; /* Changer la couleur du texte en gris */
+}
+
+
+/* Réduction de la hauteur du select */
+.motif select {
+    height: 30px; /* Réduction de la hauteur */
+    width: 250px;
+}
+#pays{
+    height: 30px; /* Réduction de la hauteur */
+    width: 210px;
+}
+#country{
+    height: 30px; /* Réduction de la hauteur */
+    width: 210px;
+}
+#ville{
+    height: 30px; /* Réduction de la hauteur */
+    width: 210px;
+}
+.code{
+    height: 60px; /* Réduction de la hauteur */
+    width: 425px;
+}
