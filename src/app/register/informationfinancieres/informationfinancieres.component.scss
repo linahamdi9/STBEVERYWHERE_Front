@@ -55,16 +55,15 @@ label {
 .button-text {
     background-color: #0a4496;
     color: white;
-    padding: 12px 170px;
+    padding: 12px 170px; /* Ajustement de la largeur du bouton */
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s;
     height: 50px;
     font-size: medium;
-    white-space: nowrap;
+    white-space: nowrap; 
 }
-
 .button-text:hover {
     background-color: #123070;
 }
@@ -82,4 +81,13 @@ label {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+
+.hide {
+    display: none!important;
+}
+
+.show {
+    display: block !important;
 }

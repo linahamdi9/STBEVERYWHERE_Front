@@ -1,0 +1,106 @@
+<div class="container">
+    <!-- Cadre bleu pour le titre -->
+    <div class="title-box">
+      <h2 class="title-text">bénéficiaire effectif</h2>
+    </div>
+    <div class="form-group">
+        <div class="name-group">
+          <div class="input-icon">
+            <label for="first_name">Nom</label>
+            <input type="text" id="first_name" name="first_name" required [(ngModel)]="data.first_name" />
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="input-icon">
+            <label for="last_name">Prénom</label>
+            <input type="text" id="last_name" name="last_name" required [(ngModel)]="data.last_name" />
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+      </div>
+  <div class="form-group tel-email-group">
+    <div>
+        <label for="relation">Nature de relation</label>
+       <select id="pays_naissance" name="pays_naissance">
+          <option value="" hidden selected></option>
+          <option value="">TUNISIE</option>
+          <option value="">FRANCE</option>
+          <option value="">ITALIE</option>
+          <option value="">ALGERIE</option>
+          <option value="">CANADA</option>
+          <option value="">LIBYE</option>
+        </select>
+      </div>
+    <div>
+        <label for="pays_naissance">Nationalité de bénéficiaire</label>
+        <select id="pays_naissance" name="pays_naissance">
+          <option value="" hidden selected></option>
+          <option value="">TUNISIE</option>
+          <option value="">FRANCE</option>
+          <option value="">ITALIE</option>
+          <option value="">ALGERIE</option>
+          <option value="">CANADA</option>
+          <option value="">LIBYE</option>
+        </select>
+    </div>
+   
+  </div>
+  <div class="form-group birth-info-group">
+    <div>
+        <label for="pays_naissance">Autre Nationalité</label>
+        <select id="pays_naissance" name="pays_naissance">
+          <option value="" hidden selected></option>
+          <option value="">TUNISIE</option>
+          <option value="">FRANCE</option>
+          <option value="">ITALIE</option>
+          <option value="">ALGERIE</option>
+          <option value="">CANADA</option>
+          <option value="">LIBYE</option>
+        </select>
+    </div>
+    <div>
+        <label for="date_naissance">Type CIN</label>
+        <select id="pays_naissance" name="pays_naissance">
+            <option value="" hidden selected></option>
+            <option value="">TUNISIE</option>
+            <option value="">FRANCE</option>
+            <option value="">ITALIE</option>
+            <option value="">ALGERIE</option>
+            <option value="">CANADA</option>
+            <option value="">LIBYE</option>
+          </select>
+      </div>
+  </div>
+  <div class="form-group tel-email-group">
+    
+    <div class="input-icon">
+      <label for="phone">Numéro de téléphone mobile</label>
+      <input type="tel" id="phone" name="phone" required  placeholder="+216">
+      <i class="fas fa-phone"></i>
+    </div>
+    <div class="input-icon">
+      <label for="email">Adresse e-mail de travail</label>
+      <input type="email" id="email" name="email" required placeholder="Email">
+      <i class="fas fa-envelope"></i>
+    </div>
+  </div>
+  <div class="form-group birth-info-group ">
+    <div>
+        <label for="date_naissance">Pays de travail </label>
+        <select id="pays_naissance" name="pays_naissance">
+            <option value="" hidden selected></option>
+            <option value="">TUNISIE</option>
+            <option value="">FRANCE</option>
+            <option value="">ITALIE</option>
+            <option value="">ALGERIE</option>
+            <option value="">CANADA</option>
+            <option value="">LIBYE</option>
+          </select>
+    </div>
+  
+  </div>
+  <div class="button-box">
+    <button type="submit" class="button-text" (click)="goto()">ENREGISTRER ET CONTINUER </button>
+  </div>
+
+</div> 
+

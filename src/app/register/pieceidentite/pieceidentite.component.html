@@ -34,6 +34,9 @@
     </div>
    
   </div>
+
+
+
   <div class="form-group birth-info-group">
     <div>
         <label for="nom">Nom et prénom de la mère</label>
@@ -57,29 +60,16 @@
 
 
 
-        <div class="hero">
+        <div class="form-group birth-info-group hero">
             <div class="card">
                
-                <img src="../assets/images/bg/Profile.png" id="Profile-Pic">
+                <img [src]="image" id="Profile-Pic">
                 <label for="input-file" class="custom-file-upload">Update image</label>
-                <input type="file" accept="image/jpeg,image/png,image/jpg" id="input-file">
+                <!-- <input type="file" accept="image/*" (change)="selectFile($event)" class="form-control" name="doc_rne" accept=".pdf, .jpg, .jpeg, .png"> -->
+                <input type="file" accept="image/jpeg,image/png,image/jpg" id="input-file" (change)="selectFile($event)">
             </div>
         </div>
-        <script>
-            let ProfilePic = document.getElementById("Profile-Pic");
-            let inputFile = document.getElementById("input-file");
 
-            inputFile.onchange = function() {
-                let file = inputFile.files[0];
-                let reader = new FileReader();
-                reader.onloadend = function() {
-                    ProfilePic.src = reader.result;
-                }
-                if (file) {
-                    reader.readAsDataURL(file);
-                }
-            }
-        </script>
 
 
         <div class="button-box">

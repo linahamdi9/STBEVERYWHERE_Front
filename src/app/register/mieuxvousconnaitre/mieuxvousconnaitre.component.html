@@ -18,16 +18,17 @@
             <label for="nationalite"><h4>Êtes-vous Tunisien:</h4></label>
             <div class="options">
                 <label for="resident_tunisie">
-                    <input type="radio" id="resident_tunisie" name="nationalite" value="resident_tunisie">
+                    <input type="radio" [(ngModel)]="resident" id="resident_tunisie" name="nationalite" value="resident_tunisie">
                     Résident en Tunisie
                 </label>
                 <label for="non_resident_tunisie">
-                    <input type="radio" id="non_resident_tunisie" name="nationalite" value="non_resident_tunisie">
+                    <input type="radio" [(ngModel)]="resident" id="non_resident_tunisie" name="nationalite" value="non_resident_tunisie">
                     Non résident en Tunisie
                 </label>
             </div>
         </div>
 
+       <div class="" *ngIf="resident == 'resident_tunisie' ">
         <div class="adresse">
             <label for="pays"><h4>Veuillez choisir votre adresse:</h4></label>
             <h5>Pays</h5>
@@ -64,7 +65,7 @@
             </select>
         </div>
            
-        
+    </div>
 
         <!-- Utilisation de la même classe pour le bouton -->
         <div class="button-box">

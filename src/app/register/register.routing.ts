@@ -11,6 +11,11 @@ import { ChoixagenceComponent } from './choixagence/choixagence.component';
 import { SignaturedesdocumentsComponent } from './signaturedesdocuments/signaturedesdocuments.component';
 import { PieceidentiteComponent } from './pieceidentite/pieceidentite.component';
 import { MotdepasseComponent } from './motdepasse/motdepasse.component';
+import { AcceuilComponent } from './acceuil/acceuil.component';
+import { CarteComponent } from './carte/carte.component';
+import { ChequeComponent } from './cheque/cheque.component';
+import { BeneficiereComponent } from './beneficiere/beneficiere.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 
@@ -65,6 +70,29 @@ export const RegisterRoutes: Routes = [
 				path: 'password',
 				component: MotdepasseComponent
 			},
+			{
+				path: 'initial-page',
+				component: AcceuilComponent
+			},
+			{
+				path: 'carte',
+				component: CarteComponent
+			},
+			{
+				path: 'cheque',
+				component: ChequeComponent
+			},
+			{
+				path: 'beneficiere',
+				component: BeneficiereComponent
+			},
+			{
+				path: 'menu',
+				component: MenuComponent
+			},
+		
+		
+		
 		
 		
 		

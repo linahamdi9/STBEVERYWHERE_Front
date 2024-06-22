@@ -18,6 +18,11 @@ import { SignaturedesdocumentsComponent } from './signaturedesdocuments/signatur
 import { ChoixagenceComponent } from './choixagence/choixagence.component';
 import { MotdepasseComponent } from './motdepasse/motdepasse.component';
 import { PieceidentiteComponent } from './pieceidentite/pieceidentite.component';
+import { AcceuilComponent } from './acceuil/acceuil.component';
+import { CarteComponent } from './carte/carte.component';
+import { ChequeComponent } from './cheque/cheque.component';
+import { BeneficiereComponent } from './beneficiere/beneficiere.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
 
@@ -38,12 +43,19 @@ import { PieceidentiteComponent } from './pieceidentite/pieceidentite.component'
     ChoixagenceComponent,
     SignaturedesdocumentsComponent,
     PieceidentiteComponent,
-   
+    AcceuilComponent,
+    CarteComponent,
+    ChequeComponent,
+    BeneficiereComponent,
+    MenuComponent
   ],
 
   declarations: [
      
-
+  
+  
+  
+    
   ],
   
 })

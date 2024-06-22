@@ -9,11 +9,11 @@
             <label for="civilite">Vous êtes :</label>
             <div class="radio-group">
                 <label for="particulier">
-                    <input type="radio" id="particulier" name="civilite" value="particulier"> Particulier
+                    <input type="radio"       id="particulier" name="civilite" value="particulier"> Particulier
                 </label>
 
                 <label for="professionnel"> 
-                    <input type="radio" id="professionnel" name="civilite" value="professionnel"> Professionnel
+                    <input type="radio"   id="professionnel" name="civilite" value="professionnel"> Professionnel
                 </label>
             </div>
         </div>
@@ -22,14 +22,16 @@
         <div class="form-group inline-group">
             <div>
                 <label for="statutProfessionnel">Statut professionnel</label>
-                <select id="statutProfessionnel" name="statutProfessionnel">
+                 <select id="statutProfessionnel" name="statutProfessionnel" [(ngModel)]="professionnel">
                     <option value="" hidden selected>choisir</option>
-                    <option value="" >Actif en CDI</option>
-                    <option value="" >-------</option>
-                    <option value="" >CHOIX 3</option>
-                </select>
+                    <option value="Actif en CDI" >Actif en CDI</option>
+                    <option value="Actif en CDD" >Actif en CDD</option>
+                    <option value="Eleve Etudiant" > <h1 >Eleve\ Etudiant </h1> </option>
+                </select> 
+                
+                  
             </div>
-            <div>
+            <div  *ngIf="professionnel != 'Eleve Etudiant'">
                 <label for="Naturedelactivité">Nature de l'activité</label>
                 <select id="Naturedelactivité" name="Naturedelactivité">
                     <option value="" hidden selected>choisir</option>
@@ -38,7 +40,7 @@
                 </select>
             </div>
         </div>
-
+        <div class="" *ngIf="professionnel != 'Eleve Etudiant'">
         <div class="form-group profession">
             <label for="Profession">Profession</label>
             <select id="Profession" name="Profession">
@@ -61,8 +63,9 @@
             </div>
         </div>
 
-        <div class="button-box">
-            <button type="submit" class="button-text" (click)="goto()"> ENREGISTRER ET CONTINUER</button>
-        </div>
-    </form>
+        
 </div>
+<div class="button-box">
+    <button type="submit" class="button-text" (click)="goto()">CONTINUER</button>
+  </div>
+

@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -7,13 +8,18 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-mieuxvousconnaitre',
   imports: [
-    FormsModule
+    FormsModule,
+    CommonModule
   ],
   standalone: true,
   templateUrl: './mieuxvousconnaitre.component.html',
   styleUrls: ['./mieuxvousconnaitre.component.scss']
 })
-export class MIEUXVOUSCONNAITREComponent { constructor(private router: Router) {
+export class MIEUXVOUSCONNAITREComponent { 
+  
+  resident:any
+  
+  constructor(private router: Router) {
   
     
 }

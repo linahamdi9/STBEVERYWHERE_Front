@@ -4,17 +4,17 @@ import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-signaturedesdocuments',
+  selector: 'app-acceuil',
   imports:[
     CommonModule,
     FormsModule
     
   ],
   standalone:true,
-  templateUrl: './signaturedesdocuments.component.html',
-  styleUrls: ['./signaturedesdocuments.component.scss']
+  templateUrl: './acceuil.component.html',
+  styleUrls: ['./acceuil.component.scss']
 })
-export class SignaturedesdocumentsComponent { 
+export class AcceuilComponent { 
   isSubmitted =  false;
   showMessage =  false;
   public data ={civilité:"", first_name :"",last_name:"" }
@@ -43,7 +43,7 @@ onSubmit (){
   
   
   alert ("success")
-  this.router.navigate(['/register/carte'])
+  this.router.navigate(['/register/lina'])
   
   
   }else{

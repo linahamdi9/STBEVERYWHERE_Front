@@ -51,7 +51,7 @@ if (this.isSubmitted ){
 
 
 alert ("Mot de passe validé")
-this.router.navigate(['/register/signaturedesdocuments'])
+this.router.navigate(['/register/initial-page'])
 
 
 }else{
